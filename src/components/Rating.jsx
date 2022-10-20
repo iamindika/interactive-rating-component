@@ -1,11 +1,10 @@
 import RatingOption from "./RatingOption";
 import starIcon from "../assets/images/icon-star.svg"
 import PropTypes from "prop-types";
-
-const RATING_OPTIONS = [1, 2, 3, 4, 5];
+import RATING_OPTIONS from "../utilities/constants";
 
 const Rating = ({ selected, onClick, onSubmit }) => (
-  <main className="main-rating">
+  <main className="main-rating container">
     <div className="icon-wrapper">
       <img
         className="icon"
