@@ -1,14 +1,18 @@
 import PropTypes from 'prop-types';
 
-const RatingOption = ({ selected, option }) => (
-  <li className={`rating-option ${selected === option && 'selected'}`}>
+const RatingOption = ({ option, selected, onClick }) => (
+  <li 
+    className={`rating-option ${selected === option && 'selected'}`}
+    onClick={() => onClick(option)}
+  >
     {option}
   </li>
 );
 
 RatingOption.propTypes = {
+  option: PropTypes.number.isRequired,
   selected: PropTypes.number.isRequired,
-  option: PropTypes.number.isRequired
+  onClick: PropTypes.func.isRequired
 }
 
 export default RatingOption;
