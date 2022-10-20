@@ -1,5 +1,7 @@
 import { useState } from "react";
-import Rating from "./components/Rating"
+import Rating from "./components/Rating";
+import Result from "./components/Result";
+import RATING_OPTIONS from "./utilities/constants";
 
 function App() {
   const [ rating, setRating ] = useState(null);
@@ -25,7 +27,10 @@ function App() {
             onClick={handleClick}
             onSubmit={handleSubmit}
           /> 
-        : <h1>Results: {rating}</h1>}
+        : <Result
+            rating={rating}
+            totalRatings={RATING_OPTIONS.length}
+          />}
     </>
   )
 }
