@@ -2,8 +2,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --black: #131518;
+  --white: #FFF;
+  --grey: #7C8798;
+  --light-grey: #969FAD;
+  --orange: #FC7614;
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
+  font: 400 14px / 22px "Overpass", sans-serif;
+  color: var(--light-grey);
 }
 
 /*
