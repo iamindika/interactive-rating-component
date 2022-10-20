@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 
 const RATING_OPTIONS = [1, 2, 3, 4, 5];
 
-const Rating = ({ selected, onClick }) => (
-  <main className="main">
+const Rating = ({ selected, onClick, onSubmit }) => (
+  <main className="main-rating">
     <div className="icon-wrapper">
       <img
         className="icon"
@@ -33,13 +33,17 @@ const Rating = ({ selected, onClick }) => (
       ))}
     </ul>
 
-    <button className="btn">Submit</button>
+    <button 
+      className="btn"
+      onClick={onSubmit}
+    >Submit</button>
   </main>
 );
 
 Rating.propTypes = {
-  selected: PropTypes.number.isRequired,
-  onClick: PropTypes.func.isRequired
+  selected: PropTypes.number,
+  onClick: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired
 }
 
 export default Rating;
