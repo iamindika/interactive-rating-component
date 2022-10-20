@@ -1,7 +1,12 @@
+import Rating from "./components/Rating"
+
 function App() {
   return (
     <>
-      Interactive Rating Component
+      <Rating 
+        selected={2}
+        onClick={() => {}}
+      /> 
     </>
   )
 }
