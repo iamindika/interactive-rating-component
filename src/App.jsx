@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Rating from "./components/Rating";
 import Result from "./components/Result";
+import Footer from "./components/Footer";
 import RATING_OPTIONS from "./utilities/constants";
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
             rating={rating}
             totalRatings={RATING_OPTIONS.length}
           />}
+      
+      <Footer />
     </>
   )
 }

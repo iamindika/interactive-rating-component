@@ -75,6 +75,20 @@ body {
   color: var(--orange);
 }
 
+.footer-text {
+  font-size: 12px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--orange)
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  opacity: 0.5;
+}
+
 /* Resuable Styles */
 .container {
   width: 87%;
@@ -87,6 +101,7 @@ body {
 /* Specific Styles */
 #root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -210,5 +225,9 @@ body {
 
   .description {
     margin-top: 7px;
+  }
+
+  .footer-text {
+    font-size: 13px;
   }
 }
