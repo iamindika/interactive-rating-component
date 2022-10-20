@@ -11,13 +11,110 @@
   --orange: hsl(25, 97%, 53%);
 }
 
+/* Typography */
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
   font: 400 14px / 22px "Overpass", sans-serif;
   background-color: var(--very-dark-blue);
   color: var(--light-grey);
+}
+
+.title {
+  margin: 16px 0 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.rating-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding-top: 3px;
+  background-color: var(--dark-blue);
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.175px;
+  color: var(--medium-grey);
+}
+
+.rating-option:hover,
+.rating-option:focus {
+  cursor: pointer;
+  background-color: var(--medium-grey);
+  color: #FFF;
+}
+
+.rating-option.selected,
+.rating-option.selected:hover,
+.rating-option.selected:focus {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 22.5px;
+  background-color: var(--orange);
+  font: 700 14px / 18px "Overpass", sans-serif;
+  letter-spacing: 1.87px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* Specific Styles */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* General Styles */
+.main {
+  width: 87%;
+  max-width: 327px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 24px 24px 32px; 
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+.icon-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-left: 2px;
+  background-color: var(--dark-blue);
+}
+
+.info {
+  margin: 10px 0 0;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style-type: none;
 }
