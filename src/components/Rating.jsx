@@ -26,8 +26,9 @@ const Rating = ({ selected, onClick }) => (
       {RATING_OPTIONS.map((option) => (
         <RatingOption
           key={option}
-          selected={selected}
           option={option}
+          selected={selected}
+          onClick={onClick}
         />
       ))}
     </ul>
