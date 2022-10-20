@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Rating Component](/docs/rating-screenshot)
-![Result Component](/docs/result-screenshot)
+![Rating Component](/docs/rating-screenshot.png)
+![Result Component](/docs/result-screenshot.png)
 
 ### Links
 
