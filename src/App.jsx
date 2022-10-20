@@ -11,12 +11,21 @@ function App() {
     }
   }
 
+  const handleSubmit = () => {
+    if(rating) {
+      setIsSubmit(true)
+    }
+  };
+
   return (
     <>
-      <Rating 
-        selected={rating}
-        onClick={handleClick}
-      /> 
+      {!isSubmit 
+        ? <Rating 
+            selected={rating}
+            onClick={handleClick}
+            onSubmit={handleSubmit}
+          /> 
+        : <h1>Results: {rating}</h1>}
     </>
   )
 }
