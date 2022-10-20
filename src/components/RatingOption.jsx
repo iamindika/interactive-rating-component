@@ -11,7 +11,7 @@ const RatingOption = ({ option, selected, onClick }) => (
 
 RatingOption.propTypes = {
   option: PropTypes.number.isRequired,
-  selected: PropTypes.number.isRequired,
+  selected: PropTypes.number,
   onClick: PropTypes.func.isRequired
 }
 
