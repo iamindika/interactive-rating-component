@@ -69,8 +69,7 @@ body {
   color: var(--white);
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   background-color: var(--white);
   color: var(--orange);
 }
@@ -84,16 +83,16 @@ body {
 }
 
 /* General Styles */
-.main {
+.main-rating {
   width: 87%;
   max-width: 327px;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 24px 24px 32px; 
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
 }
 
-.icon-wrapper{
+.icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,4 +113,46 @@ body {
   margin: 24px 0 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .title {
+    margin-top: 30px;
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .rating-option {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+
+  .btn {
+    margin-top: 32px;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+  }
+
+  .main-rating {
+    width: 29%;
+    max-width: 412px;
+    padding: 32px;
+  }
+
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  .info {
+    margin-top: 7px;
+  }
 }
